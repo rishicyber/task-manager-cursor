@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Task Manager</h1>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search tasks..." class="search-bar">
+        <button id="clear-search" class="clear-search">✕</button>
+      </div>
+    </header>
+    <main>
+      <div class="board">
+        <div class="column" id="todo-column">
+          <h2>Todo</h2>
+          <button class="add-card">+</button>
+          <div class="card-list"></div>
+        </div>
+        <div class="column" id="inprogress-column">
+          <h2>In Progress</h2>
+          <button class="add-card">+</button>
+          <div class="card-list"></div>
+        </div>
+        <div class="column" id="done-column">
+          <h2>Done</h2>
+          <button class="add-card">+</button>
+          <div class="card-list"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Task Manager</h3>
+          <p>A simple and elegant task management tool</p>
+        </div>
+        <div class="footer-section">
+          <h4>Features</h4>
+          <ul>
+            <li>Drag & Drop Cards</li>
+            <li>Search Tasks</li>
+            <li>Edit Cards</li>
+            <li>Data Persistence</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Shortcuts</h4>
+          <ul>
+            <li>Ctrl+Enter: Save Card</li>
+            <li>Escape: Cancel Edit</li>
+            <li>Click Card: Edit</li>
+            <li>Drag: Move Card</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Data Storage</h4>
+          <p>Your tasks are saved locally in your browser using localStorage.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Task Manager. Built with HTML, CSS & JavaScript.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

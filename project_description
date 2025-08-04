@@ -1,0 +1,46 @@
+Task Manager Web Application - Feature Overview
+
+1. A modern web application for task management, inspired by the classic todo list, designed for productivity and ease of use.
+
+2. Visual Theme:
+   - Features a beautiful "One Dark" theme by default.
+   - Includes a toggle to switch between dark and light modes for user preference.
+
+3. Board Layout:
+   - Displays tasks in three main columns by default:
+     a. Todo
+     b. In Progress
+     c. Done
+   - Users can add, remove, or rename columns to suit their workflow.
+
+4. Task Cards:
+   - Each column contains draggable cards representing individual tasks.
+   - Cards can be reordered within a column or moved between columns via drag-and-drop.
+   - Each card includes:
+     • A heading (title)
+     • Detailed text/description
+     • A due date/reminder option
+     • Labels/tags for categorization or priority
+     • Subtasks or checklists
+     • Option to attach files or images
+     • An 'X' button to delete the card
+   - Clicking a card brings it into focus at the center of the screen, where the heading and text can be edited.
+
+5. Column Controls:
+   - Each column has a '+' button to add a new card/task.
+   - Columns can be customized or reordered.
+
+6. User Experience Features:
+   - Search and filter functionality to quickly find tasks by text, label, or status.
+   - Responsive design for seamless use on desktop and mobile devices.
+   - Notifications for deadlines, assignments, or important changes.
+   - Activity log/history to track changes and support undo/redo actions.
+
+7. Collaboration & Security:
+   - User authentication to allow personal or team boards.
+   - Multiple users can collaborate, assign tasks, and comment on cards.
+
+8. Data Persistence:
+   - All tasks, columns, and user data are saved securely, either locally or in a backend database, ensuring nothing is lost on refresh or logout.
+
+This application aims to provide a powerful, flexible, and visually appealing environment for managing tasks, projects, and team collaboration.
