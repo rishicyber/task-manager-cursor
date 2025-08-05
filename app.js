@@ -438,6 +438,14 @@ function showCardEditor(card) {
       overlay.remove();
     }
   });
+  
+  // Close on Escape key
+  document.addEventListener('keydown', function closeOnEscape(e) {
+    if (e.key === 'Escape') {
+      overlay.remove();
+      document.removeEventListener('keydown', closeOnEscape);
+    }
+  });
 }
 
 // Add event listeners to all add-card buttons
