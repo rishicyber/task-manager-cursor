@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Task Manager</h1>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search tasks..." class="search-bar">
+        <button id="clear-search" class="clear-search">✕</button>
+      </div>
+    </header>
+    <main>
+      <div class="board">
+        <div class="column" id="todo-column">
+          <h2>Todo</h2>
+          <button class="add-card">+</button>
+          <div class="card-list"></div>
+        </div>
+        <div class="column" id="inprogress-column">
+          <h2>In Progress</h2>
+          <button class="add-card">+</button>
+          <div class="card-list"></div>
+        </div>
+        <div class="column" id="done-column">
+          <h2>Done</h2>
+          <button class="add-card">+</button>
+          <div class="card-list"></div>
+        </div>
+      </div>
+    </main>
+    <!-- Floating Info Button -->
+    <button id="info-btn" class="info-btn floating" title="Show Information">ℹ</button>
+    <!-- Info Popup -->
+    <div id="info-popup" class="info-popup">
+      <div class="info-content">
+        <div class="info-header">
+          <h3>Task Manager Information</h3>
+          <button id="close-info" class="close-info">✕</button>
+        </div>
+        <div class="info-body">
+          <div class="info-section">
+            <h4>Features</h4>
+            <ul>
+              <li>Drag & Drop Cards</li>
+              <li>Search Tasks</li>
+              <li>Edit Cards</li>
+              <li>Data Persistence</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Shortcuts</h4>
+            <ul>
+              <li>Ctrl+Enter: Save Card</li>
+              <li>Escape: Cancel Edit</li>
+              <li>Click Card: Edit</li>
+              <li>Drag: Move Card</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Data Storage</h4>
+            <p>Your tasks are saved locally in your browser using localStorage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
