@@ -35,38 +35,47 @@
       </div>
     </main>
     <footer>
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Task Manager</h3>
-          <p>A simple and elegant task management tool</p>
-        </div>
-        <div class="footer-section">
-          <h4>Features</h4>
-          <ul>
-            <li>Drag & Drop Cards</li>
-            <li>Search Tasks</li>
-            <li>Edit Cards</li>
-            <li>Data Persistence</li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Shortcuts</h4>
-          <ul>
-            <li>Ctrl+Enter: Save Card</li>
-            <li>Escape: Cancel Edit</li>
-            <li>Click Card: Edit</li>
-            <li>Drag: Move Card</li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Data Storage</h4>
-          <p>Your tasks are saved locally in your browser using localStorage.</p>
-        </div>
-      </div>
       <div class="footer-bottom">
         <p>&copy; 2024 Task Manager. Built with HTML, CSS & JavaScript.</p>
       </div>
     </footer>
+    
+    <!-- Floating Info Button -->
+    <button id="info-btn" class="info-btn floating" title="Show Information">ℹ</button>
+    
+    <!-- Info Popup -->
+    <div id="info-popup" class="info-popup">
+      <div class="info-content">
+        <div class="info-header">
+          <h3>Task Manager Information</h3>
+          <button id="close-info" class="close-info">✕</button>
+        </div>
+        <div class="info-body">
+          <div class="info-section">
+            <h4>Features</h4>
+            <ul>
+              <li>Drag & Drop Cards</li>
+              <li>Search Tasks</li>
+              <li>Edit Cards</li>
+              <li>Data Persistence</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Shortcuts</h4>
+            <ul>
+              <li>Ctrl+Enter: Save Card</li>
+              <li>Escape: Cancel Edit</li>
+              <li>Click Card: Edit</li>
+              <li>Drag: Move Card</li>
+            </ul>
+          </div>
+          <div class="info-section">
+            <h4>Data Storage</h4>
+            <p>Your tasks are saved locally in your browser using localStorage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="app.js"></script>
 </body>

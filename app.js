@@ -459,6 +459,37 @@ addCardButtons.forEach((btn) => {
   });
 });
 
+// Info popup functionality
+function initializeInfoPopup() {
+  const infoBtn = document.getElementById('info-btn');
+  const infoPopup = document.getElementById('info-popup');
+  const closeInfoBtn = document.getElementById('close-info');
+  
+  // Show popup on info button click
+  infoBtn.addEventListener('click', () => {
+    infoPopup.classList.add('visible');
+  });
+  
+  // Close popup on close button click
+  closeInfoBtn.addEventListener('click', () => {
+    infoPopup.classList.remove('visible');
+  });
+  
+  // Close popup on overlay click
+  infoPopup.addEventListener('click', (e) => {
+    if (e.target === infoPopup) {
+      infoPopup.classList.remove('visible');
+    }
+  });
+  
+  // Close popup on Escape key
+  document.addEventListener('keydown', function closeOnEscape(e) {
+    if (e.key === 'Escape' && infoPopup.classList.contains('visible')) {
+      infoPopup.classList.remove('visible');
+    }
+  });
+}
+
 // Initialize everything when page loads
 document.addEventListener('DOMContentLoaded', () => {
   // Load saved data first
@@ -467,4 +498,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // Then initialize other features
   initializeDragAndDrop();
   initializeSearch();
+  initializeInfoPopup();
 });
